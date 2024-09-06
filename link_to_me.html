@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linked page</title>
+  <style>
+    body{ 
+        background-image: url(https://th.bing.com/th/id/R.a11401268551ea3eaac68cf577bab7e6?rik=LmdyQH59CQApzw&pid=ImgRaw&r=0);
+    }
+</style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="link_to_me.html">Linked page</a>
+    </nav>
+  </header>
+
+  <!-- styling body to be center and header to be blueviolet; -->
+  <body style="text-align:center;">
+    <h1 style="color:blueviolet;"> Contact Us</h1>
+
+    <!-- User input for name -->
+    <form action="/submit" method="post">
+        <label for="name">Name</label>
+        <br>
+        <input type="text" id="Name" name="name" 
+            placeholder="Enter Your Name" required>
+    <br><br>
+
+    <!-- User input for email -->
+    <form>
+        <label for ="user-email">Email</label>
+        <br>
+        <!-- Email pattern: pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" -->
+        <input type="email" id="user-email"
+        pattern="Enter your Email" required 
+        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+        >
+        <br><br>
+
+        <!-- User input for phone -->
+        <label for="user-phone">Phone</label>
+        <br>
+        <!--    
+                Pattern reference
+                https://www.w3schools.com/tags/att_input_pattern.asp
+        -->
+        <input type="text" id="user-phone" name="phone" pattern="[0-9]{10}"
+        placeholder="Enter your 10 digit phone number">
+        <br><br>
+
+        <!-- Reset and submit buttons -->
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+        <br><br>
+        <hr>
+        <br>
+
+        <!-- schedule meet date -->
+        <h2><em><label for="schedule">Schedule Meet</label></em></h2>
+        <input type="date" min="2024-03-15" max="2024-09-5" id="schedule" name="schedule">
+        <br><br>
+        <br>
+    
+
+    <!-- Radio - user can Choose One option max-->
+    <h3><em><label>Select Preferred Contact Method</label></em></h3>
+        <input type="radio" id="Phone" name="phone" value="Phone">
+        <label for="phone">Phone</label><br>
+        <input type="radio" id="email" name="email" value="email">
+        <label for="email">Email</label>
+        <br><br>
+        <hr>
+
+        <!-- textarea to add comments -->
+        <h2><em><label for="comments">Additional Comments</label></em></h2>
+        <textarea id="comments" name="comments" rows="10" cols="50"
+        placeholder="Share your thoughts">
+        </textarea>
+        <br><br>
+
+        <!-- aria-label reset and submit button -->
+        <button type="reset"aria-label="Reset Form">Reset</button>
+        <button type="submit"aria-label="Submit Form">Submit</button>
+        <br><br>
+        <hr>
+
+        <!-- News letter button label -->
+        <label for="newsletter">Subscribe to Newsletter:</label>
+        <br>
+        <input type="checkbox" id="newsletter" name="newsletter" value="yes" checked>
+        <br><br>
+
+        <!-- Creating a cascading select menu -->
+        <label style="color: rgb(255, 0, 0); " for="category">Category:</label>
+        <select id="category" onchange="updateOptions()">
+            <option value="guides">Guides</option>
+            <option value="tips">Tips</option>
+            <option value="articles">Articles</option>
+        </select>
+    
+        <label style="color: rgb(225, 0, 0);" for="games">Games:</label>
+        <select id="games">
+            <option value="">Please select a category first</option>
+            <option value="">Super Mario 64</option>
+            <option value="">The Legend of Zelda: Breath of the Wild</option>
+            <option value="">The Legend of Zelda: Ocarina of Time</option>
+            <option value="">Metroid Prime</option>
+            <option value="">Doom Eternal</option>
+        </select>
+    </form>
+</body>
+
+</html>  
