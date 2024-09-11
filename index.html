@@ -17,21 +17,22 @@
 <body>
     <!-- Profile Header -->
     <header>
-        <h2><em>Video Introduction</em></h2>
-        <video width="420" height="240" controls>
+        <h1><em>Video Introduction:</em></h1>
+        <video width="424" height="240" controls>
             <source src="bowser_intro_video.mp4" type="video/mp4">
             Your browser does not support the video tag.
-        </video>
+        </video><br><br>
+        <br>
         <img class="profile" src="images.png/bowser.jpg" alt="Professional profile picture of Bowser.">
         <h1 class="name">King Bowser</h1>
-        <p>Welcome to my professional web resume.</p>
+        <p>Welcome to my professional web resume.🐲</p>
     </header>
     <!-- Navigation Bar  -->
     <nav>
         <h2>Contact</h2>
         <p>Email: KoopaKing@gmail.com</p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/King Bowser">King Bowser</a></p>
-        <a href="link_to_me.html" target="_blank">Link To Me</a>
+        <a class="link" href="link_to_me.html" target="_blank">Link To Me</a>
     </nav>
 
     <!-- Table with (table boarder, table header (th), table row (tr), table data (td)) -->
@@ -61,7 +62,8 @@
     <article>
         <h2>Education</h2>
         <ul>
-            <li><a href="https://universitywebsite.com"><strong>Mushroom Kingdom University</strong></a>, Bachelor's Degree, June/28/2002</li>
+            <li><a href="https://universitywebsite.com"><strong>🍄Mushroom Kingdom University🍄</strong></a>, Bachelor's Degree, June/28/2002
+            </li>
             <!-- Add more educational qualifications as needed -->
         </ul>
     </article>
@@ -69,23 +71,29 @@
     <!-- Work experience header  -->
     <article>
         <h2>Work Experience</h2>
-        <p><strong>Ruler of Mushroom Kingdom</strong>, Nintendo <em>(1985-2024)</em></p>
+        <div>
+            <p><strong>Ruler of Mushroom Kingdom</strong>, Nintendo <em>(1985-2024)</em></p>
+            <p><strong>Super Mario 64</strong>, Nintendo <em>(1997-2024)</em></p>
+            <p><strong>Super Smash Bros. Ultimate</strong>, Nintendo <em>2018-2024</em></p>
+        </div>
         <!-- Add more experiences as needed -->
     </article>
 
     <!-- Testimonials using blockquote -->
     <aside>
         <h2>Testimonials</h2>
-        <blockquote cite="http://example.com/fiona-feedback">
-            "King Bowser is the best King of all the 
-            land."
-        </blockquote>
-        <p>- Shy Guy #023, Project Manager at Koopa Troop Task Force </p>
+        <div class="shyguy">
+            <blockquote>
+                "King Bowser is the best King of all  the land."
+            </blockquote>
+            <p>- Shy Guy #023, Project Manager at Koopa Troop Task Force </p>
+        </div>
     </aside>
 
     <h2>Recent Projects</h2>
     <section>
-        <!-- Coding Projects Section -->
+        <div class="web">
+             <!-- Coding Projects Section -->
         <p>Project Name: Website Redesign</p>
         <pre><code>&lt;!-- HTML structure of the redesigned homepage --&gt;
 &lt;div class="container"&gt;
@@ -95,30 +103,35 @@
     &lt;footer&gt;...&lt;/footer&gt;
 &lt;/div&gt;
 </code></pre>
+        </div>
     </section>
 
     <!-- audio <source src="" type="audio/mp3"> -->
     <section>
         <h2>Peaches song ❤️</h2>
-        <audio controls>
-            <source src="Bowser - Peaches (Official Music Video)  The Super Mario Bros. Movie.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-        </audio>
+        <div class="audio">
+            <audio controls>
+                <source src="Bowser - Peaches (Official Music Video)  The Super Mario Bros. Movie.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
     </section>
 
     <!-- video <source src="" type="video/mp4">   -->
     <section>
         <h2>Project Highlights for Smash Ultimate</h2>
-        <video width="420" height="240" controls>
-            <source src="Bowser-Montage.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <div class="video">
+            <video width="420" height="240" controls>
+                <source src="Bowser-Montage.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </section>
 
     <!-- youtube video <iframe src="https://www.youtube.com/embed/YOUR_YOUTUBE_VIDEO" -->
     <section>
         <h2>Tutorials & Talks</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/VYpqKBAN6zQ" frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VYpqKBAN6zQ" frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     <!-- Add a button  -->
@@ -127,6 +140,7 @@
         <button class="contact-btn">Contact via email</button>
      </section>
      <br/>
+     <img class="bowser" src="images.png/bowser3.webp" alt="breathing bowser">
 
     <footer>
         <p>&copy; 2024 King Bowser. All rights reserved.</p>

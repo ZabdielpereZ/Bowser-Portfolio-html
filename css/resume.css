@@ -2,9 +2,231 @@
 
 /* Element Selectors */
 .profile{
-    padding: 50px;
+    padding: 20px;
+    border: solid 2px black;
+    background-image: linear-gradient(#d8ed1a, #9198e5);
+    border-radius: 200px;
+    box-shadow: 10px 5px 5px darkblue;
+}
+
+.profile:hover{
+    border-color: blue;
 }
 
 .name{
     font-family: fantasy;
+    text-shadow: 5px 5px #4177aa;
 }
+
+header h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(#9198e5, #d8ed1a);
+    width: 300px;
+    height: inherit;
+    text-shadow: 5px 5px #728ba3;
+}
+
+
+h2{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(162, 235, 16), rgb(25, 58, 25));
+    height: 60px;
+    width: 240px;
+    text-shadow: 5px 5px #78394d;
+}
+
+header video{
+    border: solid 2px black;
+    background-color: black;
+    width: 500;
+    height: 300;
+}
+
+header video:hover{
+    border-color: red;
+}
+
+header p{
+    width: 100px;
+    height: 100px;
+    background: rgb(203, 61, 61);
+    transition: width 2s;
+}
+
+header p:hover{
+    width: 300px;
+}
+
+nav p{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: solid 1px black;
+    width: 170px;
+    height: 50px;
+    border-radius: 10px;
+    background: #613978;
+    transition: width 2s;
+}
+
+nav p:hover{
+    width: 250px;
+}
+
+nav a:active{
+    background-color: rgb(255, 47, 113);
+    color: rgb(6, 205, 119);
+    width: 500;
+    height: 300;
+}
+
+nav a{
+    border-radius: 5px;
+    border: solid 1px rgb(155, 9, 178);
+    background-color: gold;
+}
+
+.link{
+    font-size: larger;
+}
+
+section table {
+    border: solid 1px black;
+    width: 400px;
+    height: 100px;
+    background-color: yellow;
+}
+
+section th {
+    background-color: yellowgreen;
+}
+
+section td {
+    background-color: #78394d;
+}
+
+section table:hover {
+    background-color: blue;
+}
+
+section th:hover{
+    background-color: cornflowerblue;
+}
+
+section td:hover{
+    background-color: palevioletred;
+}
+
+article li{
+    width: 150px;
+    height: 100px;
+    background: rgb(255, 242, 0);
+    transition: width 2s;
+}
+
+article li:hover{
+    width: 300px;
+}
+
+div{
+    background-image: linear-gradient(#5328ed, #d81aed);
+    border: solid 2px;
+    width: 400px;
+    height: 150px;
+}
+
+div:hover{
+    border-color: red;
+}
+
+article p:hover{
+    width: 300px;
+}
+
+.shyguy{
+    background-image: url(../images.png/background.jpg);
+    width: 541px;
+    height: 150px;
+}
+
+.shyguy blockquote{
+    font-family: fantasy;
+    color: red;
+}
+
+.shyguy p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.web {
+    background-image: url(../images.png/background.jpg);
+    width: 470px;
+    height: 200px;
+    color: #ed3828;
+    font-size: larger;
+    border-color: #ea28ed;
+}
+
+.audio{
+    justify-items: end;
+    align-items: center;
+    background-image: url(../images.png/background.jpg);
+    padding-top: 30px;
+    height: 60px;
+    width: 250px;
+}
+
+.video {
+    background-image: url(../images.png/background.jpg);
+    border: solid 2px black;
+    width: 425px;
+    height: 250px;
+    background-color: black;
+    padding: 50px;
+}
+
+section iframe{
+    border: solid 2px rgb(13, 0, 255);
+}
+
+section iframe:hover{
+    border-color: rgb(240, 138, 4);
+}
+
+.contact-btn{
+    padding: 10px;
+    font-size: small;
+    color: #ed831a;
+    border-radius: 10px;
+    border: solid 1px blue;
+    background-color: #1a52ed;
+}
+
+.contact-btn:hover{
+    border-color: coral;
+}
+
+.contact-btn:active{
+    background-color: #8c41aa;
+}
+
+@keyframes breathing {
+    0% { transform: scale(1);}
+    50% { transform: scale(1.1);}
+    100% { transform: scale(1);}
+  }
+
+.bowser{
+    padding-left: 250px;
+    width: 330px;
+    animation: breathing 3s infinite ease-out;
+    position: absolute;
+    top: 300px;
+    left: 260px;
+    z-index: 0;
+    filter: grayscale(100);
+    transition: .3;
+}
+
+.bowser:hover {
+    filter: grayscale(0);
+  }
